@@ -38,7 +38,7 @@ class BleAdvertisement {
     return result;
   }
 
-  static Future<bool>? isAdvertising() async {
+  static Future<bool?> isAdvertising() async {
     try {
       return await _channel.invokeMethod('isAdvertising');
     } catch (err) {
