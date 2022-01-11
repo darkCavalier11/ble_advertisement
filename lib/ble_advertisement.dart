@@ -38,13 +38,24 @@ class BleAdvertisement {
     return result;
   }
 
-  static Future<bool?> isAdvertising() async {
+  static Future<bool?> get isAdvertising async {
     try {
       return await _channel.invokeMethod('isAdvertising');
     } catch (err) {
       throw BlePluginException(
         statusCode: 3,
         message: "Unable to check for bluetooth Advertisement status",
+      );
+    }
+  }
+
+  static Future<bool?> get isBluetothEnabled async {
+    try {
+      return await _channel.invokeMethod('isBluetoothEnabled');
+    } catch (err) {
+      throw BlePluginException(
+        statusCode: 4,
+        message: "Unable to check for bluetooth status",
       );
     }
   }

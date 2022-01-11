@@ -28,3 +28,8 @@ android {
         minSdkVersion 16
     }
 }
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'com.google.android.gms:play-services-basement:17.6.0'
+}

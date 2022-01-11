@@ -47,6 +47,8 @@ public class BleAdvertisementPlugin implements FlutterPlugin, MethodCallHandler 
       result.success("0");
     } else if (call.method.equals("isAdvertising")) {
       result.success(bluetoothHelper.isAdvertising());
+    } else if (call.method.equals("isBluetoothEnabled")) {
+      result.success(bluetoothHelper.isBluetoothEnabled());
     }
     else {
       result.notImplemented();
