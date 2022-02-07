@@ -20,7 +20,7 @@ class BluetoothHelper {
      * Assigned Company IDs are from Bluetooth SIG to SIG members.
      * As of now, we should feel free to choose any ID which does not conflict (Last ID on 21st Jan is 0x0857)
      * */
-    private static  final int CHANGEPAY_COMPANY_ID=50596;//0xC5A4 (CPAY0)
+    private static  final int CHANGEPAY_COMPANY_ID=40496;//0xC5A4 (CPAY0)
     private static BluetoothHelper mInstance;
     private  AdvertiseCallback mAdvertiseCallback;
     private BluetoothAdapter mBluetoothAdapter;
